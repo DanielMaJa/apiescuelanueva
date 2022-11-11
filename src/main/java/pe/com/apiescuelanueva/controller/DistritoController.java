@@ -28,10 +28,6 @@ public class DistritoController {
     private DistritoService distritoService;
     
     // @GetMapping sirve para obtener valores
-    @GetMapping
-    public List<DistritoEntity> findAll(){
-        return distritoService.findAll();
-    };
     
     @GetMapping("/custom")
     public List<DistritoEntity> findAllCustom(){
